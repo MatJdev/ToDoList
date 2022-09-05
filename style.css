@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --white: #fafafb;
+    --orange: #ffbd4f;
+    --orange-light: #ffcc99;
+    --orange-dark: #ff9933;
+    --yellow: #e9ff4f;
+    --yellow-light: #ffff99;
+    --yellow-dark: #ffff33;
+ }
+
+ body {
+    background: linear-gradient(to bottom, var(--orange-dark), var(--yellow-dark));
+    height: 100vh;
+    font-family: 'Prompt', sans-serif;
+ }
+
+ .container {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+ }
+
+ .perfil h1 {
+    color: var(--white);
+ }
+
+ .perfil span {
+    color: var(--white);
+    letter-spacing: 1px;
+ }
+
+ #fecha {
+    color: var(--white);
+    padding: 50px 0 5px 0;
+ }
+
+ .agregar-tarea {
+    background-color: var(--white);
+    border-radius: 15px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 70px;
+    margin: 40px 0;
+ }
+
+ .agregar-tarea input {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+ }
+
+ .agregar-tarea i {
+    font-size: 30px;
+    color: var(--orange);
+ }
+
+ .agregar-tarea i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+ }
+
+ .agregar-tarea input::placeholder {
+    font-size: 1.1rem;
+    color: var(--orange-dark);
+ }
+
+ .seccion-tarea h3 {
+    margin-bottom: 20px;
+ }
+
+ .seccion-tarea li {
+    display: flex;
+    /*background: linear-gradient(to bottom, var(--white), var(--white));*/
+    background-color: #FFDEE9;
+    background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+ }
+
+ .seccion-tarea i {
+    font-size: 25px;
+ }
+
+ .seccion-tarea i:hover {
+    cursor: pointer;
+    color: var(--orange);
+ }
+
+ .seccion-tarea > ul p {
+    font-size: 1.2rem;
+ }
+
+ .line-through {
+    text-decoration: line-through;
+    color: var(--orange-light);
+ }
+
+ .seccion-tarea h5 {
+    text-align: center;
+    color: rgb(102, 102, 102);
+ }
